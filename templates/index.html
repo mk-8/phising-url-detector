@@ -21,7 +21,7 @@
       crossorigin="anonymous"
     />
 
-    <link href="static/styles.css" rel="stylesheet" />
+    <link href="../static/styles.css" rel="stylesheet" />
     <title>URL detection</title>
   </head>
 
@@ -45,11 +45,11 @@
             <button class="button" role="button">Check here</button>
           </form>
         </div>
-
+        {% if url %}
         <div class="col-md" id="form2">
           <br />
           <h6 class="right">
-            <a href="{{" url }} target="_blank">{{ url }}</a>
+            <a href="{{ url }}" target="_blank">{{ url }}</a>
           </h6>
 
           <br />
@@ -73,6 +73,7 @@
             Continue
           </button>
         </div>
+        {% endif %}
       </div>
       <br />
     </div>
